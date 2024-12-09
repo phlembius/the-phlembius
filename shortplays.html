@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Phlembius Literature Repository</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .nav-buttons button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .navbar .nav-buttons button:hover {
+            background-color: #777;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .dropdown button:hover {
+            background-color: #777;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-radius: 5px;
+        }
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        #inprog { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="nav-buttons">
+        <a href="index.html">
+            <button>HOME</button>
+        </a>
+    </div>
+    <div class="dropdown">
+        <button>THE REPOSITORY</button>
+        <div class="dropdown-content">
+            <a href="poems.html">POEMS<br></a>
+            <a href="shortplays.html">SHORT PLAYS<br></a>
+            <a href="shortstories.html">SHORT STORIES<br></a>
+            <a href="inprogess.html">IN PROGRESS<br></a>
+        </div>
+    </div>
+</div>
+<section id="inprog">
+    <h1>IN PROGRESS...</h1>
+    <p>Expect Updates Soon!</p>
+</section>
+  <footer id="footer" style="height: 6.25vh; background-color: #666; color: white; text-align: center; padding: 20px;">
+    <p>
+        THE PHLEMBIUS LITERATURE REPOSTITORY 2024
+    </p>
+  </footer>
+</body>
+</html>

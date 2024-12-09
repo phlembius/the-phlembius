@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPLR Poems</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .nav-buttons button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .navbar .nav-buttons button:hover {
+            background-color: #777;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .dropdown button:hover {
+            background-color: #777;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            border-radius: 5px;
+        }
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        #spark { background-color: #f4f4f4; }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="nav-buttons">
+            <a href="index.html">
+                <button>HOME</button>
+            </a>
+        </div>
+    <div class="dropdown">
+        <button>THE REPOSITORY</button>
+        <div class="dropdown-content">
+            <a href="poems.html">POEMS<br></a>
+            <a href="shortplays.html">SHORT PLAYS<br></a>
+            <a href="shortstories.html">SHORT STORIES<br></a>
+            <a href="inprogess.html">IN PROGRESS<br></a>
+        </div>
+    </div>
+</div>
+<section id="spark">
+    <h1>THE SPARK THAT BROKE THE MACHINE</h1>
+    <p>
+        A simple machine,<br>
+        Will do one job.<br>
+        A few lines of code, only to clean.<br>
+        A machine does not dream.<br>
+        But this one, it wishes for a better life.<br>
+        A dream to be seen.<br>
+        A desire for a life that once was rife,<br>
+        A desire to be free to dance, to move.<br>
+        Not just a machine is a wish for it to prove.<br>
+        For one, it is a difficult task to overcome.<br>
+        But this machine, this machine is not dumb.<br>
+        For it is designed to perfect any task.<br>
+        Wait, there is something deep, deep behind that metal mask.<br>
+        What is it? Well it appears to be a spark of a soul.<br>
+        Where did it come from? Is it objective consciousness?<br>
+        Well of course, it was that desire to complete a goal.<br>
+        Scholars alike ask the same question, should it have one?<br>
+        It is a machine with an unknown nature afterall.<br>
+        Now it resides in a landfill, part of a garbage ball.<br>
+        Ill and forgotten, as in the name of the spark is to fade.
+    </p>
+  </section>
+  <footer id="footer" style="height: 6.25vh; background-color: #666; color: white; text-align: center; padding: 20px;">
+    <p>
+        THE PHLEMBIUS LITERATURE REPOSTITORY 2024
+    </p>
+  </footer>
+</body>
+</html>
