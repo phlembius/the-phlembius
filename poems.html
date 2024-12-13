@@ -11,7 +11,7 @@
         }
         .navbar {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             background-color: #333;
             padding: 10px 20px;
@@ -35,6 +35,7 @@
         .dropdown {
             position: relative;
             display: inline-block;
+            margin-right: 10px;
         }
         .dropdown button {
             background-color: #555;
@@ -51,18 +52,24 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            right: 0;
+            left: 0;
             background-color: #f9f9f9;
             min-width: 150px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1000;
-            border-radius: 5px;
         }
-        .dropdown-content a:last-child {
-            border-bottom: none;
+        .dropdown-content button {
+            background-color: #ddd;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 0px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
         }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
+        .dropdown-content button:hover {
+            background-color: #bbb;
         }
         .dropdown:hover .dropdown-content {
             display: block;
@@ -77,18 +84,18 @@
 </head>
 <body>
 <div class="navbar">
-    <div class="nav-buttons">
-            <a href="index.html">
-                <button>HOME</button>
-            </a>
-        </div>
     <div class="dropdown">
         <button>THE REPOSITORY</button>
         <div class="dropdown-content">
-            <a href="poems.html">POEMS<br></a>
-            <a href="shortplays.html">SHORT PLAYS<br></a>
-            <a href="shortstories.html">SHORT STORIES<br></a>
-            <a href="inprogess.html">IN PROGRESS<br></a>
+            <button onclick="window.location.href='poems.html';">POEMS</button>
+            <button onclick="window.location.href='shortstories.html';">SHORT STORIES</button>
+            <button onclick="window.location.href='shortplays.html';">SHORT PLAYS</button>
+            <button onclick="window.location.href='archived.html';">ARCHIVES</button>
+            <button onclick="window.location.href='inprogess.html';">WHAT'S IN PROGRESS?</button>
+        </div>
+    </div>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html';">HOME</button>
         </div>
     </div>
 </div>
